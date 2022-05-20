@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
+#ifndef _MAIN_H_
+#define _MAIN_H_
 /**
  * struct flags - struct containing flags to "turn on"
  * whenever a flag specifier is passed to _printf()
@@ -45,4 +47,4 @@ int print_rev(va_list l, flags_t *f);
 int print_bigS(va_list l, flags_t *f);
 int print_address(va_list l, flags_t *f);
 int print_percent(va_list l, flags_t *f);
-#endif
+#endif /* _MAIN_H_ */
